@@ -57,15 +57,15 @@ export default function App() {
     };
   }, [images]);
 
-  function AuthorCreditsComponent({ image }: { image: Image }) {
-    return (
-      <span className="credit-text">
-        <a href={image.url}>Photo</a> was taken by{" "}
-        <a href={image.photographer_url}>{image.photographer}</a> on{" "}
-        <a href="https://www.pexels.com">Pexels</a>
-      </span>
-    );
-  }
+  // function AuthorCreditsComponent({ image }: { image: Image }) {
+  //   return (
+  //     <span className="credit-text">
+  //       <a href={image.url}>Photo</a> was taken by{" "}
+  //       <a href={image.photographer_url}>{image.photographer}</a> on{" "}
+  //       <a href="https://www.pexels.com">Pexels</a>
+  //     </span>
+  //   );
+  // }
 
   // local image component to map images
   function ImageLocalComponent() {

@@ -4,7 +4,7 @@ import { Image } from "../typings/Images";
 export default async function fetchImage(pageNumber: number) {
   const query: string = "nature";
   const apiURL: string = `https://api.pexels.com/v1/search?query=${query}&page=${pageNumber}&per_page=9&size=small`;
-  const apiKey: string = process.env.API_KEY;
+  const apiKey: string = process.env.NEXT_PUBLIC_API_KEY;
   try {
     // API KEY required in headers as Authorization
     const response = await fetch(apiURL, {
