@@ -1,0 +1,73 @@
+.image-overlay-container {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* Grid 1/1 better way to approach a overlay on component (not using absolute and relative) */
+    grid-area: 1 / 1;
+    z-index: 2;
+
+    border-radius: 0.625rem;
+    gap: 1.563rem;
+    padding-bottom: 1.125rem;
+
+    background-color: rgb(17, 17, 17, 0.5);
+}
+
+.image-overlay-container span {
+    color: white;
+}
+
+.image-overlay-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    font-size: 1rem;
+    gap: 0.625em;
+}
+
+.image-overlay-divider {
+    background-color: white;
+    width: 23%;
+    height: 0.125em;
+}
+
+.image-overlay-button {
+    outline: none;
+    border: 0.063em solid rgb(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+
+    padding: 0.625em 1.375em;
+    border-radius: 1.563em;
+
+    font-weight: medium;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.font-medium-italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.text-title {
+    /* wrap name if it's too long */
+    max-width: 12rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.font-bold {
+    font-weight: 700;
+}

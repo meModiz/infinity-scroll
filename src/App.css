@@ -1,0 +1,59 @@
+.main-container {
+    /* Used dynamic viewports for better mobile compability*/
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #E7E7E7;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* 3 Images per row standart size */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    gap: 1.875rem;
+    padding: 1.563rem 2.5rem 0px 2.5rem;
+}
+
+.gallery-item {
+    display: grid;
+
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-end {
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 2rem;
+    width: 100%;
+    grid-column: span 3;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* Styling for image author credits */
+.credit-text {
+    color: black;
+    font-size: 0.5rem;
+}
+
+/* Adjusts the number of images per row based on screen size for better responsiveness */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 425px) {
+    .gallery-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
