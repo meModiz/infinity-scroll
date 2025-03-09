@@ -11,10 +11,10 @@ export default function ImageCard({ image }: { image: Image }) {
         key={image.id}
         src={image.src.large}
         srcSet={`
-        ${image.src.small} 173w,
-        ${image.src.tiny} 280w,
-        ${image.src.medium} 467w,
-        ${image.src.large} 940w,
+          ${image.src.large} 940w, 
+          ${image.src.medium} 467w, 
+          ${image.src.small} 173w, 
+          ${image.src.tiny} 280w
       `} // small and medium width calculations made with aspect ratio calculator (4/3)
         sizes="(max-width: 425px) 365px, (max-width: 768px) 320px, (max-width: 1024px) 295px, 433px"
         loading="lazy"
