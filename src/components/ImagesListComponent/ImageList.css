@@ -1,0 +1,7 @@
+.gallery-item {
+    display: grid;
+
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: 100%;
+}

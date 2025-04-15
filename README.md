@@ -1,10 +1,15 @@
-# Take-home technical assignment for prospective Web Engineers at Vinted
+# Take-home technical assignment for web enginner position at company.
 
 ## ✒️ Author: Modestas Anilionis
 
 ## Intro
 
-I would like to thank the Vinted team for giving me the opportunity to participate in this technical assignment. It was an interesting challenge and a great learning experience. I appreciate the chance to showcase my skills and look forward to hearing from you soon. Thank you!👨‍💻
+Initially this application was created to showcase my skills while applying to company. Unfortunately I did not met their requirements, so I decided to share my knowledge on github for other companies.
+Application do not use any 3rd party libaries.
+
+## 🖥️ Preview (deployed application)
+
+I deployed application from my private repository on **Vercel**. You can check it out here: https://infinity-scroll-blond.vercel.app/
 
 ## 🛠️ Technical stack:
 
@@ -16,6 +21,7 @@ I would like to thank the Vinted team for giving me the opportunity to participa
 - Infinity scroll through images
 - Images favouriting and unfavouriting
 - Responsive design with 3 breakpoints (mobile, tablet, pc)
+- Credits for author (Required by Pexels) (Hidden to match the expected UI)
 
 ## 📄 Documentation for install:
 
@@ -39,20 +45,12 @@ I would like to thank the Vinted team for giving me the opportunity to participa
 
 4. Setup API Key in local environment:
 
-   1. In project folder _(academy-web-homework-meModiz)_ create `.env.local` file
+   1. In project folder _infinity-scrooll_ create `.env.local` file
    2. Setup your API KEY like that (You can get your API at https://www.pexels.com/api/key/):
 
       ```
       VITE_PEXELS_API_KEY="YOUR_API_KEY"
       ```
-
-   - **Additional information for API Key setup:**
-
-     - Please include (in the repository) an API key so that we can test the app. _(from homework-assignment.md)_
-       - My API KEY:
-       ```
-       VITE_PEXELS_API_KEY="iWfsOujLEJmeh5szpPoEFA9Mv5K0yf74Y5RGRTdEtezZ5pXf9pj8uO8i"
-       ```
 
 - Run & Test Project
 
