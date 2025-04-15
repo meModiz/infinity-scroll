@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import { useImageUpdate } from "./hooks/useImageUpdate";
 import ImagesListComponent from "./components/ImagesListComponent/ImagesListComponent";
